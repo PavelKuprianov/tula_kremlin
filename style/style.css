@@ -73,10 +73,6 @@
   font-size: 20px;
 }
 
-.main__sity {
-  
-}
-
 .main__sity_img {
   flex: 1 1 50%;
   background-image: url(../img/overview.jpeg);
@@ -170,4 +166,170 @@
   transform: scale(1.1);
   box-shadow: 0 0 8px 5px;
 }
+
+.main.container {
+  background-color: #babbc0;
+}
+.scheme {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-color: #babbc0;
+  background-image: url(../img/sheme.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.table {
+  padding-top: 12vh;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.tr {
+  position: relative;
+  height: 10vh;
+  border: 1px solid #000;
+}
+
+.td {
+  border: 1px solid #000;
+}
+
+.td-hover {
+  cursor: pointer;
+}
+
+td[data-number="4"]:hover::before {
+  content: "Наугольная башня";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="6"]:hover::before {
+  content: "Башня водяных ворот";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="19"]:hover::before {
+  content: "Башня На погребу";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="22"]:hover::before {
+  content: "Ивановская башня";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="33"]:hover::before {
+  content: "Башня Ивановских ворот";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="54"]:hover::before {
+  content: "Никитская башня";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="38"]:hover::before {
+  content: "Башня Одоевских ворот";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="23"]:hover::before {
+  content: "Спасская башня";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="14"]:hover::before {
+  content: "Башня Пятницких ворот";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="18"]:hover::before {
+  content: "Богоявленский собор";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  color: #FEFFB9;
+  font-weight: 700;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="27"]:hover::before {
+  content: "Успенский собор";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="15"]:hover::before {
+  content: "Музейно-выставочный комплекс";
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+td[data-number="37"]:hover::before {
+  content: 'Музей "Тульские самовары"';
+  position: absolute;
+  top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FEFFB9;
+  text-shadow: #28281CFF 3px 3px 3px;
+}
+
+
 
