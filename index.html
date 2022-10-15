@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тульский кремль</title>
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel="stylesheet" href="./style/default.css">
+  <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./style/style.css">
+
+  <script src="./js/slider.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=05f1e5be-4d2c-4095-9649-2c54e52a31fc&lang=ru_RU"
+    type="text/javascript">
+    </script>
+</head>
+
+<body>
+  <header class="header">
+    <section class="container">
+      <a class="logo" href="#">
+        <img class="logo__img" src="./img/emblem.png" alt="Герб города Тулы">
+      </a>
+      <nav class="nav">
+        <a href="./interactive.html">Интерактивная схема</a>
+        <a href="#search-kreml">Как найти кремль</a>
+        <a href="#">Наши контакты</a>
+        <a href="#">Скачать презентацию</a>
+      </nav>
+    </section>
+
+  </header>
+
+  <main class="main container">
+    <section class="main__sity">
+      <div class="main__sity_text">
+        <h2 class="title main__title">
+          Тула - город-история, город-труженник, город-герой
+        </h2>
+        <div class="main__block">
+          <p class="text">
+            Тула — один из старейших городов России, впервые упоминается в Никоновской летописи 1146 года.
+            Что, как известно, на целый год старше Москвы.
+          </p>
+          <p class="text">
+            Безусловно, Туле есть, чем годится. И, конечно, есть на что посмотреть.
+            А начать осмотр стоит именно с сердца Тулы - ее кремля.
+          </p>
+        </div>
+      </div>
+      <div class="main__sity_img"></div>
+    </section>
+    <section class="hero">
+      <h1 class="big-title">Кремль - сердце любого города</h1>
+      <div class="hero__container">
+        <div class="swiper-container">
+          <!-- Оболочка для слайдера -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/kremlin1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/kremlin2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/kremlin3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/kremlin5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/kremlin7.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="hero_text">
+          <p class="text">Тульский кремль, расположенный в историческом и административном центре Тулы,
+            является одним из двенадцати сохранившихся в России подобных сооружений.
+            Наряду с Московским Кремлем,
+            Казанским, Новгородским, Астраханским, Зарайским и другими, он относится к числу самых известных среди них.
+          </p>
+          <p class="text">
+            Несмотря на то, что Тула
+            отождествляется, в первую очередь, с самоварами и пряниками и в меньшей степени с оружием, немало туристов
+            приезжает сюда ради этой каменной крепости – памятника архитектуры XVI века и старейшего сооружения в
+            городе.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="map__text">
+        <h2 id="search-kreml" class="title">Как найти кремль</h2>
+        <p class="text">Тульский кремль находится по адресу: г.Тула. Кремль</p>
+        <p class="text">До Кремля можно добраться на общественном транспорте следуя до остановки «Площадь Ленина».</p>
+        <p class="text"> От автовокзала, который находится на Площади Победы, туда следуют автобусы № 3, 18, 28,
+          маршрутные такси № 17, 33, 62.
+          От ж/д вокзала Тулы маршрутное такси № 37.</p>
+        <p class="text"> Если вы едете личным транспортом, то обратите внимание, что все парковки вокруг Тульского
+          кремля платные, 40 руб./час.</p>
+      </div>
+      <div class="map__block">
+        <div id="map" style="width: 100%; height: 400px"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
