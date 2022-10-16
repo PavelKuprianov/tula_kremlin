@@ -23,7 +23,7 @@
     </section>
   </header>
 
-  <main class="main container">
+  <main class="main container gray">
     <h1 class="big-title">Интерактивная схема Тульского кремля</h1>
     <section class="scheme">
       <table class="table">
@@ -31,14 +31,14 @@
           <td class="td">1</td>
           <td class="td">2</td>
           <td class="td">3</td>
-          <td class="tdtd-hover" data-number="4">4</td>
+          <td class="td td-hover" data-number="4">4</td>
           <td class="td">5</td>
           <td class="td td-hover" data-number="6">6</td>
           <td class="td">7</td>
-          <td class="td">8</td>
-          <td class="td">9</td>
+          <td class="td td-hover" data-number="19">8</td>
+          <td class="td td-hover" data-number="19">9</td>
           <td class="td">10</td>
-          <td class="td">11</td>
+          <td class="td td-hover" data-number="22">11</td>
         </tr>
         <tr class="tr">
           <td class="td">12</td>
@@ -46,10 +46,10 @@
           <td class="td td-hover" data-number="14">14</td>
           <td class="td td-hover" data-number="15">15</td>
           <td class="td td-hover" data-number="15">16</td>
-          <td class="td">17</td>
+          <td class="td td-hover" data-number="27">17</td>
           <td class="td td-hover" data-number="18">18</td>
-          <td class="td td-hover" data-number="19">19</td>
-          <td class="td">20</td>
+          <td class="td td-hover" data-number="18">19</td>
+          <td class="td ">20</td>
           <td class="td">21</td>
           <td class="td td-hover" data-number="22">22</td>
         </tr>
@@ -93,6 +93,17 @@
           <td class="td">55</td>
         </tr>
       </table>
+      <div class="modal">
+        <div class="modal-wrap">
+          <button class="modal-btn" type="button">X</button>
+
+          <h2 class="title"></h2>
+          <!-- <div class="modal-img_container"> -->
+          <img class="modal__img" align="left">
+          <!-- </div> -->
+          <p class="text"></p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -165,6 +176,8 @@
       </div>
     </section>
   </footer>
+
+  <script type="module" src="./js/interactive.js"></script>
 </body>
 
 </html>
