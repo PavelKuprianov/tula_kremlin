@@ -336,6 +336,7 @@ td[data-number="37"]:hover::before {
   width: 90%;
   max-height: 90vh;
   background-color: #fff;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
   border-radius: 20px;
   padding: 30px;
   overflow: auto;

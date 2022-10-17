@@ -8,7 +8,7 @@ const museums = [
   {
     id: 6,
     title: "Башня водяных ворот",
-    img: "assets/img/vodyan.jpg",
+    img: "img/vodyan.jpg",
     description: 'Как и все проездные башни, башня Водяных ворот квадратная. Непосредственно с кремлем верхние ярусы башни не сообщались. Попасть в них можно было только с "боевого хода", примыкавшего к стене башни.  В XVII веке недалеко от башни была построена Городищенская Воскресенская церковь, возле которой впоследствии вырос оружейный завод. Видимо, из-за этой церкви башня Водяных ворот в XVIII веке называлась Воскресенской. Свое название башня Водяных ворот получила оттого, что через эти ворота постоянно шел Крестный ход из кремля на реку.'
   },
   {
@@ -79,7 +79,6 @@ const museums = [
   },
 ];
 
-
 const btnClose = document.querySelector('.modal-btn');
 const modal = document.querySelector('.modal');
 const modalWrap = modal.querySelector('.modal-wrap');
@@ -88,13 +87,15 @@ const title = modal.querySelector('.title');
 const text = modal.querySelector('.text');
 const image = modal.querySelector('.modal__img');
 
-btnClose.addEventListener('click', modalViewHandler);
-
 modal.addEventListener('click', (event) => {
-  console.log('event: ', event.target);
-
+  if (event.target === modalWrap) {
+    return
+  } else {
+    modalViewHandler()
+  }
 })
 
+btnClose.addEventListener('click', modalViewHandler());
 
 cells.forEach((cell) => {
   cell.addEventListener('click', () => {
