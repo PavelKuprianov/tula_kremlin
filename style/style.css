@@ -333,7 +333,7 @@ td[data-number="37"]:hover::before {
 }
 
 .modal-wrap {
-  width: 80%;
+  width: 90%;
   max-height: 90vh;
   background-color: #fff;
   border-radius: 20px;
