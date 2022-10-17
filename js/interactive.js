@@ -99,7 +99,7 @@ btnClose.addEventListener('click', modalViewHandler());
 
 cells.forEach((cell) => {
   cell.addEventListener('click', () => {
-    modal.classList.toggle('modal--open');
+    modal.classList.add('modal--open');
     for (let elem of museums) {
       if (elem.id == cell.dataset.number) {
         title.textContent = `${elem.title}`;
@@ -111,6 +111,6 @@ cells.forEach((cell) => {
 })
 
 function modalViewHandler() {
-  modal.classList.toggle('modal--open');
+  modal.classList.remove('modal--open');
 }
 
