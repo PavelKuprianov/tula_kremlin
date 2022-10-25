@@ -88,14 +88,19 @@ const text = modal.querySelector('.text');
 const image = modal.querySelector('.modal__img');
 
 modal.addEventListener('click', (event) => {
-  if (event.target === modalWrap) {
+
+  if (event.target === btnClose) {
+    modalViewHandler()
+    return
+  } else if (event.target.parentElement === modalWrap) {
+    return
+  } else if (event.target === modalWrap) {
     return
   } else {
     modalViewHandler()
   }
 })
 
-btnClose.addEventListener('click', modalViewHandler());
 
 cells.forEach((cell) => {
   cell.addEventListener('click', () => {
